@@ -1,0 +1,114 @@
+.detailContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: white;
+  width: 90rem;
+  height: max-content;
+  margin: auto;
+  margin-top: 5rem;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 15%);
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imgContainer {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30rem;
+  height: 30rem;
+  margin: 5rem;
+}
+
+.detailBox {
+  width: 30rem;
+  height: 30rem;
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  width: 15rem;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+}
+
+.button {
+  margin: 1rem 0.5rem;
+  width: 25rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 0.5rem;
+  background: #3f4e4f;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+.price {
+  font-size: 4rem;
+}
+
+.cantidad {
+  font-size: 3rem;
+}
+
+.stock {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .detailContainer {
+    width: calc(100vw - 2rem);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .card {
+    flex-direction: column;
+    width: 30rem;
+    margin: auto;
+    padding-top: 2rem;
+  }
+
+  .imgContainer {
+    margin: auto;
+  }
+
+  .detailBox {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .count {
+    margin: 2rem auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    color: gray;
+  }
+}

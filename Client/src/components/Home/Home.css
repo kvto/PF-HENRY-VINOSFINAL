@@ -1,0 +1,13 @@
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  max-width: 120rem;
+  background-color: #e2e2e2;
+  margin: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .homeContainer {
+    flex-direction: column;
+  }
+}

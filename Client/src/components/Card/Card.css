@@ -1,0 +1,93 @@
+.cardContainer {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background-color: white;
+  height: 44rem;
+  margin: auto;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+.cardContainer:hover {
+  cursor: pointer;
+  transition: ease-in-out 300ms;
+  box-shadow: rgb(0 0 0 / 15%) 5px 5px 5px;
+}
+
+@media only screen and (max-width: 480px) {
+  .cardContainer {
+    height: 28rem;
+    width: calc((100vw / 2) - 0.5rem);
+    border-radius: 0;
+    border: 1px solid #e2e2e2;
+  }
+}
+
+.imagen {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  max-width: 30rem;
+  max-height: 30rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  background: white;
+  margin: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .imagen {
+    max-width: 15rem;
+    max-height: 15rem;
+  }
+}
+
+.detail {
+  border-top: 1px solid #e2e2e2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  color: gray;
+  text-align: center;
+  text-transform: capitalize;
+  height: 30rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .detail {
+    font-size: 1.2rem;
+  }
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  width: 15rem;
+  margin: auto;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  color: gray;
+}
+
+@media only screen and (max-width: 480px) {
+  .button {
+    width: 15rem !important;
+  }
+}
+
+.btnFavorite {
+  margin: 1rem 1rem;
+  position: absolute;
+}
+
+.btnFavorite:hover {
+  transform: scale(1.1);
+  
+}
