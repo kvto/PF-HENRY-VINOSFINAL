@@ -40,9 +40,9 @@ import {
 } from "../types";
 import axios from "axios";
 
-// const VITE_URL_API = "http://localhost:3001/";
+const VITE_URL_API = "http://localhost:5000";
 // const { VITE_URL_API } = process.env.NODE_ENV;
-const { VITE_URL_API } = import.meta.env;
+
 
 console.log("Hola: " + VITE_URL_API);
 
